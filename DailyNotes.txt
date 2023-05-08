@@ -143,7 +143,71 @@ bool()
 str()
 
 
-C:\Users\SANDEEP>python --version
+6)List
+7)Tuple
+8)dict
+9)Set
+10)forzenset
+
+
+Fundamental DT Immutable
+
+List:
+=====
+To represent group values as a single entity/unit 
+
+1)Duplicates are allowed 
+2)Insertion order is preserved
+3)Both Homogeneous and Haterogeneous data is allowed 
+4)Growable in nature 
+5)[]
+6)list is muttable(append,remove)
+
+Tuple:
+======
+To represent group values as a single entity/unit 
+
+1)Duplicates are allowed 
+2)Insertion order is preserved
+3)Both Homogeneous and Haterogeneous data is allowed 
+4)()
+5)list is imuttable(append,remove)
+
+Set:
+====
+1)insertion order is not preserved
+2)duplicates are not allowed 
+3)Both Homogeneous and Haterogeneous data is allowed 
+4)index is not applicable
+5)muttable
+6)growable 
+7){}
+
+
+FrozenSet:
+=========
+1)insertion order is not preserved
+2)duplicates are not allowed 
+3)Both Homogeneous and Haterogeneous data is allowed 
+4)index is not applicable
+5)imuttable
+7)({})
+set={22,12.45,'mahesh',22,True}
+frozenset(set)
+frozenset({True, 'mahesh', 12.45, 22})
+Dict:
+=====
+	1)key-value pair
+	2)key & value can be any datatype
+	{11:'mahesh',22:'suresh',11:'rajesh'}
+	3)key must be unique and value can be duplicate & duplicate key will overrride value 
+	4)Key and value can be any type 
+	
+	
+	
+	
+	
+	C:\Users\SANDEEP>python --version
 Python 3.11.0
 
 C:\Users\SANDEEP>py
@@ -266,7 +330,125 @@ False
 True
 >>> bool("False")
 True
->>>
+>>> emp=[12,23.43,True,"mahesh"]
+>>> emp=[12,23.43,True,"mahesh",12,"suresh"]
+>>> print(emp)
+[12, 23.43, True, 'mahesh', 12, 'suresh']
+>>> type(emp)
+<class 'list'>
+>>> emps=["suresh","naresh","rajesh","mahesh","naresh"]
+>>> print(emps)
+['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
+>>> type(emps)
+<class 'list'>
+>>> emps[-1]
+'naresh'
+>>> emps[1:3]
+['naresh', 'rajesh']
+>>> for i in emps:print(i)
+...
+suresh
+naresh
+rajesh
+mahesh
+naresh
+>>> print(emps)
+['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
+>>> emps.append("ritish")
+>>> print(emps)
+['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh', 'ritish']
+>>> emps.remove("mahesh")
+>>> print(emps)
+['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
+>>> emps.remove(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> print(emps)
+['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
+>>> emps.remove("naresh")
+>>> print(emps)
+['suresh', 'rajesh', 'naresh', 'ritish']
+>>> emps.remove(emps[2])
+>>> print(emps)
+['suresh', 'rajesh', 'ritish']
+>>> print(emps)
+['suresh', 'rajesh', 'ritish']
+>>> emps.append(1,"satish")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: list.append() takes exactly one argument (2 given)
+>>> print(emps[9])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> ids=(22,33,42,65,22,76)
+>>> type(ids)
+<class 'tuple'>
+>>> ids.append(89)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> set={22,12.45,'mahesh',True}
+>>> type(set)
+<class 'set'>
+>>> set={22,12.45,'mahesh',22,True}
+>>> print(set)
+{True, 'mahesh', 12.45, 22}
+>>> set.add("suresh")
+>>> print(set)
+{True, 'mahesh', 12.45, 22, 'suresh'}
+>>> set.remove("suresh")
+>>> print(set)
+{True, 'mahesh', 12.45, 22}
+>>> data=frozenset(set)
+>>> type(data)
+<class 'frozenset'>
+>>> print(data)
+frozenset({True, 'mahesh', 12.45, 22})
+>>> data.add(23)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'frozenset' object has no attribute 'add'
+>>> {11:'mahesh',22:'suresh',11:'rajesh'}
+{11: 'rajesh', 22: 'suresh'}
+>>> emps1={11:'mahesh',22:'suresh',11:'rajesh'}
+>>> type(emps1)
+<class 'dict'>
+>>> print(dict)
+<class 'dict'>
+>>> print(emps1)
+{11: 'rajesh', 22: 'suresh'}
+>>> emps1={"suresh":"hyderabad","naresh":"mumbai","suresh":"delhi"}
+>>> print(emps1)
+{'suresh': 'delhi', 'naresh': 'mumbai'}
+>>> emps1={"suresh":"hyderabad",1111:"mumbai",True:"delhi"}
+>>> print(emps1)
+{'suresh': 'hyderabad', 1111: 'mumbai', True: 'delhi'}
+
+
+	welcome.py
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
 
 
 
