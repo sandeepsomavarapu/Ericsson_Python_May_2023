@@ -136,7 +136,7 @@ id()
 
 print()
 
-int()
+int()		-->TypeCASTING
 float()
 complex()
 bool()
@@ -428,6 +428,40 @@ AttributeError: 'frozenset' object has no attribute 'add'
 
 
 	welcome.py
+	
+	identation
+	
+	
+	ctrl + `
+	
+	Day-2:
+	======
+	
+	class and object 
+	
+	class Welcome:			__init__    self
+	
+		def m1():
+			...
+			...
+			...
+	
+	
+create the object 
+			obj=Welcome() #constructor will get called 
+	
+			obj.m1()
+	
+	
+	constructor:
+	=============
+	to instantiation
+	
+	to provide values to the global variables 
+	
+	
+	two constructors in class .......
+	
 	
 	
 	

@@ -5,7 +5,7 @@ def Adding(a, b):
 def sub(a, b):
     sub = a - b #local variable Sum
     return sub
-def message():
+def message():#default function
     print("am from default function")
 Adding(3, 4)
 print("After Calling the sub Function:",sub(3, 4))
