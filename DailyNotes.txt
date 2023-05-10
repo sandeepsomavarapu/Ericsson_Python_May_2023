@@ -462,28 +462,91 @@ create the object
 	
 	two constructors in class .......
 	
+	Python-->file handling  CSV
 	
 	
 	
 	
+	Exception Handling:
+	===================
+	mechanisam to convert system defined error messages into user friendly error messages 
+	
+	
+	Problems without exception handling
+	
+	1)system defined error messages 
+	
+	2)abnormal termination
+	
+	
+	Advantages with exception handling
+	
+	1)user friendly error messages 
+	
+	2)normal termination
+	
+	
+		compile time error 
+		
+		runtime error (exception) invalid input
+	
+	
+	OOPS:inheritance-->performance
+	
+	class A:
+	
+	100 functions
+	
+	
+	class B(A):
+	
+	20 functions			code reusability-->
 	
 	
 	
+	user defined exception
 	
 	
 	
+	class WrongCredentials(Exception):
+	
+		__init__
 	
 	
 	
+	Regular Expressions:
+	======================
 	
+	
+	1)compile--->compile  
+    2)finditer
+			start
+			end
+			group
 
+			re
+			
+			ab
+			
+			"abababaabba"
 
+character classes :
+==================
 
+[abc]-->either a or b or c
 
+[^abc]-->except a and b and c
 
+[a-z]-->any lowercase alphabet
+[A-Z]-->anu uppercase alphabet
 
+[a-zA-Z]
+[0-9]		\d ,\D
+[a-zA-Z0-9]  \w,\W
 
+.
 
-
+\s-->space character
+\S-->any char except space character
 
 
