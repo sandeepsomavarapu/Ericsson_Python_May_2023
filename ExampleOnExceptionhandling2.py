@@ -11,11 +11,12 @@ except SyntaxError:
  
 except NameError:
     print('enter only numbers for division')
- 
+except Exception:
+    print('enter only numbers for division')
 else:
     print("No exceptions")
  
 finally:    #
-    print("This will execute no matter what")#csleanup code
+    print("This will execute no matter what")#cleanup code
 print("remaining 100 lines code ")
 

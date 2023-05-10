@@ -7,5 +7,6 @@ try:
 	print(res)
 except ZeroDivisionError: 
 	print('denominator cannot be zero')
-
+except ValueError: 
+	print('Enter Only Numbers....')
 print('last statement')
