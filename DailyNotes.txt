@@ -1,552 +1,622 @@
 
-Cloud Lab Link:
-================
+	Cloud Lab Link:
+	================
 
-https://cloud.cdp.rpsconsulting.in/console/#/
-
-
-Git Repo:
-=========
-
-https://github.com/sandeepsomavarapu/Ericsson_Python_May_2023
+	https://cloud.cdp.rpsconsulting.in/console/#/
 
 
-Language:
-=========
-			English--->Communication
+	Git Repo:
+	=========
+
+	https://github.com/sandeepsomavarapu/Ericsson_Python_May_2023
 
 
-Programming Languages:
-======================
-
-		communication --->machines
-		
-		
-		
-		POP								OOP
-B,C,BCPl,COBOl,Pascal.....			c++,java,python,.net,lisp,smaltalk....
-
-	OOPS      OOPL
-						
-						1)Performance	inheritance,polymorphisam
-						2)Security		encapsulation, abstraction
-						
+	Language:
+	=========
+				English--->Communication
 
 
-Guido Van Russam  1991 feb 20th
-
-3.x  33
-
-Welcome.java
-
-class Welcome
-{
-public static void main(String args[])
-{
-
-System.out.println("welcome to python....");
-}
-
-
-}
-
-		compilation-->execution
-		
-		
-	1)functional programming  C
-	2)object oreiented Programming  C++
-	3)shell scripting perl and shellscript	
-	4)modular programming from module-3
-		
-
-Different Applications:
-=======================
-desktop/standalone  applications  		core python
-
-web applications		DJANGO,Flask gmail URL
-
-IOT
-
-ML
-
-DA
-
-DBA
-
-NWA
-
-Features:
-=========
-
-1)simple  33
-
-2)free source and  open source 	jython
-
-3)PI
-
-4)Dynamic typed
-
-	int salary=12345;//static typed 
-	salry=23232;
-	
-	
-	Versions
-	
-	1.x   1991
-	2.x   2000
-	3.x	  2008	3.11.3
-
-
-Identifiers:
-===============
-
-	a-z
-	A-Z
-	0-9
-	_
-	
-	cash=230
-	ca$h@#
-
-	emp123=1111;
-
-	123emp
-
-Datatypes:
-==========
-
-1)int
-2)float
-3)complex
-4)bool
-5)str   fundamental datatypes
-
-6)List
-7)Tuple
-8)dict
-9)Set
-10)forzenset
-11)None
-
-
-
-type()
-
-id()
-
-print()
-
-int()		-->TypeCASTING
-float()
-complex()
-bool()
-str()
-
-
-6)List
-7)Tuple
-8)dict
-9)Set
-10)forzenset
-
-
-Fundamental DT Immutable
-
-List:
-=====
-To represent group values as a single entity/unit 
-
-1)Duplicates are allowed 
-2)Insertion order is preserved
-3)Both Homogeneous and Haterogeneous data is allowed 
-4)Growable in nature 
-5)[]
-6)list is muttable(append,remove)
-
-Tuple:
-======
-To represent group values as a single entity/unit 
-
-1)Duplicates are allowed 
-2)Insertion order is preserved
-3)Both Homogeneous and Haterogeneous data is allowed 
-4)()
-5)list is imuttable(append,remove)
-
-Set:
-====
-1)insertion order is not preserved
-2)duplicates are not allowed 
-3)Both Homogeneous and Haterogeneous data is allowed 
-4)index is not applicable
-5)muttable
-6)growable 
-7){}
-
-
-FrozenSet:
-=========
-1)insertion order is not preserved
-2)duplicates are not allowed 
-3)Both Homogeneous and Haterogeneous data is allowed 
-4)index is not applicable
-5)imuttable
-7)({})
-set={22,12.45,'mahesh',22,True}
-frozenset(set)
-frozenset({True, 'mahesh', 12.45, 22})
-Dict:
-=====
-	1)key-value pair
-	2)key & value can be any datatype
-	{11:'mahesh',22:'suresh',11:'rajesh'}
-	3)key must be unique and value can be duplicate & duplicate key will overrride value 
-	4)Key and value can be any type 
-	
-	
-	
-	
-	
-	C:\Users\SANDEEP>python --version
-Python 3.11.0
-
-C:\Users\SANDEEP>py
-Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>> print("welcome to python")
-welcome to python
->>> name='ericsson'
->>> print(name)
-ericsson
->>> emp_123=999
->>> print(emp_123)
-999
->>> 123emp=999
-  File "<stdin>", line 1
-    123emp=999
-      ^
-SyntaxError: invalid decimal literal
->>> type(name)
-<class 'str'>
->>> type(emp_123)
-<class 'int'>
->>> salary=23.345
->>> type(salary)
-<class 'float'>
->>> import keyword
->>> keyword.kwlist
-['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
->>> result=True
->>> type(result)
-<class 'bool'>
->>> marks=1234
->>> type(marks)
-<class 'int'>
->>> qwerty=3+4j
->>> type(qwerty)
-<class 'complex'>
->>> result=false
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'false' is not defined. Did you mean: 'False'?
->>> result=False
->>> result="False"
->>> type(result)
-<class 'str'>
->>> orgName="ericsson"
->>> a="ericsson"
->>> a[0]
-'e'
->>> a[-2]
-'o'
->>> a[-8]
-'e'
->>> a[1:3]
-'ri'
->>> a[0:2]
-'er'
->>> a[:5]
-'erics'
->>> a[1:]
-'ricsson'
->>> a[1:50]
-'ricsson'
->>> len(a)
-8
->>> salary="12345"
->>> print(salary+1000)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate str (not "int") to str
->>> type(salary)
-<class 'str'>
->>> a=salary+100
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: can only concatenate str (not "int") to str
->>> print(salary)
-12345
->>> a=print(salary)
-12345
->>> type(a)
-<class 'NoneType'>
->>> a=int(salary)
->>> type(a)
-<class 'int'>
->>> print(a)
-12345
->>> print(a+1000)
-13345
->>> str(a)
-'12345'
->>> val=True
->>> type(val)
-<class 'bool'>
->>> str(val)
-'True'
->>> int("10")
-10
->>> int("ten")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: invalid literal for int() with base 10: 'ten'
->>> float("10")
-10.0
->>> float("10.89")
-10.89
->>> complex(10)
-(10+0j)
->>> complex(10.15)
-(10.15+0j)
->>> bool(0)
-False
->>> bool(1)
-True
->>> bool(12)
-True
->>> bool("")
-False
->>> bool("True")
-True
->>> bool("False")
-True
->>> emp=[12,23.43,True,"mahesh"]
->>> emp=[12,23.43,True,"mahesh",12,"suresh"]
->>> print(emp)
-[12, 23.43, True, 'mahesh', 12, 'suresh']
->>> type(emp)
-<class 'list'>
->>> emps=["suresh","naresh","rajesh","mahesh","naresh"]
->>> print(emps)
-['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
->>> type(emps)
-<class 'list'>
->>> emps[-1]
-'naresh'
->>> emps[1:3]
-['naresh', 'rajesh']
->>> for i in emps:print(i)
-...
-suresh
-naresh
-rajesh
-mahesh
-naresh
->>> print(emps)
-['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
->>> emps.append("ritish")
->>> print(emps)
-['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh', 'ritish']
->>> emps.remove("mahesh")
->>> print(emps)
-['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
->>> emps.remove(2)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-ValueError: list.remove(x): x not in list
->>> print(emps)
-['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
->>> emps.remove("naresh")
->>> print(emps)
-['suresh', 'rajesh', 'naresh', 'ritish']
->>> emps.remove(emps[2])
->>> print(emps)
-['suresh', 'rajesh', 'ritish']
->>> print(emps)
-['suresh', 'rajesh', 'ritish']
->>> emps.append(1,"satish")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: list.append() takes exactly one argument (2 given)
->>> print(emps[9])
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-IndexError: list index out of range
->>> ids=(22,33,42,65,22,76)
->>> type(ids)
-<class 'tuple'>
->>> ids.append(89)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'tuple' object has no attribute 'append'
->>> set={22,12.45,'mahesh',True}
->>> type(set)
-<class 'set'>
->>> set={22,12.45,'mahesh',22,True}
->>> print(set)
-{True, 'mahesh', 12.45, 22}
->>> set.add("suresh")
->>> print(set)
-{True, 'mahesh', 12.45, 22, 'suresh'}
->>> set.remove("suresh")
->>> print(set)
-{True, 'mahesh', 12.45, 22}
->>> data=frozenset(set)
->>> type(data)
-<class 'frozenset'>
->>> print(data)
-frozenset({True, 'mahesh', 12.45, 22})
->>> data.add(23)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'frozenset' object has no attribute 'add'
->>> {11:'mahesh',22:'suresh',11:'rajesh'}
-{11: 'rajesh', 22: 'suresh'}
->>> emps1={11:'mahesh',22:'suresh',11:'rajesh'}
->>> type(emps1)
-<class 'dict'>
->>> print(dict)
-<class 'dict'>
->>> print(emps1)
-{11: 'rajesh', 22: 'suresh'}
->>> emps1={"suresh":"hyderabad","naresh":"mumbai","suresh":"delhi"}
->>> print(emps1)
-{'suresh': 'delhi', 'naresh': 'mumbai'}
->>> emps1={"suresh":"hyderabad",1111:"mumbai",True:"delhi"}
->>> print(emps1)
-{'suresh': 'hyderabad', 1111: 'mumbai', True: 'delhi'}
-
-
-	welcome.py
-	
-	identation
-	
-	
-	ctrl + `
-	
-	Day-2:
-	======
-	
-	class and object 
-	
-	class Welcome:			__init__    self
-	
-		def m1():
-			...
-			...
-			...
-	
-	
-create the object 
-			obj=Welcome() #constructor will get called 
-	
-			obj.m1()
-	
-	
-	constructor:
-	=============
-	to instantiation
-	
-	to provide values to the global variables 
-	
-	
-	two constructors in class .......
-	
-	Python-->file handling  CSV
-	
-	
-	
-	
-	Exception Handling:
-	===================
-	mechanisam to convert system defined error messages into user friendly error messages 
-	
-	
-	Problems without exception handling
-	
-	1)system defined error messages 
-	
-	2)abnormal termination
-	
-	
-	Advantages with exception handling
-	
-	1)user friendly error messages 
-	
-	2)normal termination
-	
-	
-		compile time error 
-		
-		runtime error (exception) invalid input
-	
-	
-	OOPS:inheritance-->performance
-	
-	class A:
-	
-	100 functions
-	
-	
-	class B(A):
-	
-	20 functions			code reusability-->
-	
-	
-	
-	user defined exception
-	
-	
-	
-	class WrongCredentials(Exception):
-	
-		__init__
-	
-	
-	
-	Regular Expressions:
+	Programming Languages:
 	======================
-	
-	
-	1)compile--->compile  
-    2)finditer
-			start
-			end
-			group
 
-			re
+			communication --->machines
 			
-			ab
 			
-			"abababaabba"
+			
+			POP								OOP
+	B,C,BCPl,COBOl,Pascal.....			c++,java,python,.net,lisp,smaltalk....
 
-character classes :
-==================
+		OOPS      OOPL
+							
+							1)Performance	inheritance,polymorphisam
+							2)Security		encapsulation, abstraction
+							
 
-[abc]-->either a or b or c
 
-[^abc]-->except a and b and c
+	Guido Van Russam  1991 feb 20th
 
-[a-z]-->any lowercase alphabet
-[A-Z]-->anu uppercase alphabet
+	3.x  33
 
-[a-zA-Z]
-[0-9]		\d ,\D
-[a-zA-Z0-9]  \w,\W
+	Welcome.java
 
-.
+	class Welcome
+	{
+	public static void main(String args[])
+	{
 
-\s-->space character
-\S-->any char except space character
+	System.out.println("welcome to python....");
+	}
+
+
+	}
+
+			compilation-->execution
+			
+			
+		1)functional programming  C
+		2)object oreiented Programming  C++
+		3)shell scripting perl and shellscript	
+		4)modular programming from module-3
+			
+
+	Different Applications:
+	=======================
+	desktop/standalone  applications  		core python
+
+	web applications		DJANGO,Flask gmail URL
+
+	IOT
+
+	ML
+
+	DA
+
+	DBA
+
+	NWA
+
+	Features:
+	=========
+
+	1)simple  33
+
+	2)free source and  open source 	jython
+
+	3)PI
+
+	4)Dynamic typed
+
+		int salary=12345;//static typed 
+		salry=23232;
+		
+		
+		Versions
+		
+		1.x   1991
+		2.x   2000
+		3.x	  2008	3.11.3
+
+
+	Identifiers:
+	===============
+
+		a-z
+		A-Z
+		0-9
+		_
+		
+		cash=230
+		ca$h@#
+
+		emp123=1111;
+
+		123emp
+
+	Datatypes:
+	==========
+
+	1)int
+	2)float
+	3)complex
+	4)bool
+	5)str   fundamental datatypes
+
+	6)List
+	7)Tuple
+	8)dict
+	9)Set
+	10)forzenset
+	11)None
+
+
+
+	type()
+
+	id()
+
+	print()
+
+	int()		-->TypeCASTING
+	float()
+	complex()
+	bool()
+	str()
+
+
+	6)List
+	7)Tuple
+	8)dict
+	9)Set
+	10)forzenset
+
+
+	Fundamental DT Immutable
+
+	List:
+	=====
+	To represent group values as a single entity/unit 
+
+	1)Duplicates are allowed 
+	2)Insertion order is preserved
+	3)Both Homogeneous and Haterogeneous data is allowed 
+	4)Growable in nature 
+	5)[]
+	6)list is muttable(append,remove)
+
+	Tuple:
+	======
+	To represent group values as a single entity/unit 
+
+	1)Duplicates are allowed 
+	2)Insertion order is preserved
+	3)Both Homogeneous and Haterogeneous data is allowed 
+	4)()
+	5)list is imuttable(append,remove)
+
+	Set:
+	====
+	1)insertion order is not preserved
+	2)duplicates are not allowed 
+	3)Both Homogeneous and Haterogeneous data is allowed 
+	4)index is not applicable
+	5)muttable
+	6)growable 
+	7){}
+
+
+	FrozenSet:
+	=========
+	1)insertion order is not preserved
+	2)duplicates are not allowed 
+	3)Both Homogeneous and Haterogeneous data is allowed 
+	4)index is not applicable
+	5)imuttable
+	7)({})
+	set={22,12.45,'mahesh',22,True}
+	frozenset(set)
+	frozenset({True, 'mahesh', 12.45, 22})
+	Dict:
+	=====
+		1)key-value pair
+		2)key & value can be any datatype
+		{11:'mahesh',22:'suresh',11:'rajesh'}
+		3)key must be unique and value can be duplicate & duplicate key will overrride value 
+		4)Key and value can be any type 
+		
+		
+		
+		
+		
+		C:\Users\SANDEEP>python --version
+	Python 3.11.0
+
+	C:\Users\SANDEEP>py
+	Python 3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)] on win32
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> print("welcome to python")
+	welcome to python
+	>>> name='ericsson'
+	>>> print(name)
+	ericsson
+	>>> emp_123=999
+	>>> print(emp_123)
+	999
+	>>> 123emp=999
+	  File "<stdin>", line 1
+		123emp=999
+		  ^
+	SyntaxError: invalid decimal literal
+	>>> type(name)
+	<class 'str'>
+	>>> type(emp_123)
+	<class 'int'>
+	>>> salary=23.345
+	>>> type(salary)
+	<class 'float'>
+	>>> import keyword
+	>>> keyword.kwlist
+	['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+	>>> result=True
+	>>> type(result)
+	<class 'bool'>
+	>>> marks=1234
+	>>> type(marks)
+	<class 'int'>
+	>>> qwerty=3+4j
+	>>> type(qwerty)
+	<class 'complex'>
+	>>> result=false
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	NameError: name 'false' is not defined. Did you mean: 'False'?
+	>>> result=False
+	>>> result="False"
+	>>> type(result)
+	<class 'str'>
+	>>> orgName="ericsson"
+	>>> a="ericsson"
+	>>> a[0]
+	'e'
+	>>> a[-2]
+	'o'
+	>>> a[-8]
+	'e'
+	>>> a[1:3]
+	'ri'
+	>>> a[0:2]
+	'er'
+	>>> a[:5]
+	'erics'
+	>>> a[1:]
+	'ricsson'
+	>>> a[1:50]
+	'ricsson'
+	>>> len(a)
+	8
+	>>> salary="12345"
+	>>> print(salary+1000)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	TypeError: can only concatenate str (not "int") to str
+	>>> type(salary)
+	<class 'str'>
+	>>> a=salary+100
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	TypeError: can only concatenate str (not "int") to str
+	>>> print(salary)
+	12345
+	>>> a=print(salary)
+	12345
+	>>> type(a)
+	<class 'NoneType'>
+	>>> a=int(salary)
+	>>> type(a)
+	<class 'int'>
+	>>> print(a)
+	12345
+	>>> print(a+1000)
+	13345
+	>>> str(a)
+	'12345'
+	>>> val=True
+	>>> type(val)
+	<class 'bool'>
+	>>> str(val)
+	'True'
+	>>> int("10")
+	10
+	>>> int("ten")
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	ValueError: invalid literal for int() with base 10: 'ten'
+	>>> float("10")
+	10.0
+	>>> float("10.89")
+	10.89
+	>>> complex(10)
+	(10+0j)
+	>>> complex(10.15)
+	(10.15+0j)
+	>>> bool(0)
+	False
+	>>> bool(1)
+	True
+	>>> bool(12)
+	True
+	>>> bool("")
+	False
+	>>> bool("True")
+	True
+	>>> bool("False")
+	True
+	>>> emp=[12,23.43,True,"mahesh"]
+	>>> emp=[12,23.43,True,"mahesh",12,"suresh"]
+	>>> print(emp)
+	[12, 23.43, True, 'mahesh', 12, 'suresh']
+	>>> type(emp)
+	<class 'list'>
+	>>> emps=["suresh","naresh","rajesh","mahesh","naresh"]
+	>>> print(emps)
+	['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
+	>>> type(emps)
+	<class 'list'>
+	>>> emps[-1]
+	'naresh'
+	>>> emps[1:3]
+	['naresh', 'rajesh']
+	>>> for i in emps:print(i)
+	...
+	suresh
+	naresh
+	rajesh
+	mahesh
+	naresh
+	>>> print(emps)
+	['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh']
+	>>> emps.append("ritish")
+	>>> print(emps)
+	['suresh', 'naresh', 'rajesh', 'mahesh', 'naresh', 'ritish']
+	>>> emps.remove("mahesh")
+	>>> print(emps)
+	['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
+	>>> emps.remove(2)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	ValueError: list.remove(x): x not in list
+	>>> print(emps)
+	['suresh', 'naresh', 'rajesh', 'naresh', 'ritish']
+	>>> emps.remove("naresh")
+	>>> print(emps)
+	['suresh', 'rajesh', 'naresh', 'ritish']
+	>>> emps.remove(emps[2])
+	>>> print(emps)
+	['suresh', 'rajesh', 'ritish']
+	>>> print(emps)
+	['suresh', 'rajesh', 'ritish']
+	>>> emps.append(1,"satish")
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	TypeError: list.append() takes exactly one argument (2 given)
+	>>> print(emps[9])
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	IndexError: list index out of range
+	>>> ids=(22,33,42,65,22,76)
+	>>> type(ids)
+	<class 'tuple'>
+	>>> ids.append(89)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	AttributeError: 'tuple' object has no attribute 'append'
+	>>> set={22,12.45,'mahesh',True}
+	>>> type(set)
+	<class 'set'>
+	>>> set={22,12.45,'mahesh',22,True}
+	>>> print(set)
+	{True, 'mahesh', 12.45, 22}
+	>>> set.add("suresh")
+	>>> print(set)
+	{True, 'mahesh', 12.45, 22, 'suresh'}
+	>>> set.remove("suresh")
+	>>> print(set)
+	{True, 'mahesh', 12.45, 22}
+	>>> data=frozenset(set)
+	>>> type(data)
+	<class 'frozenset'>
+	>>> print(data)
+	frozenset({True, 'mahesh', 12.45, 22})
+	>>> data.add(23)
+	Traceback (most recent call last):
+	  File "<stdin>", line 1, in <module>
+	AttributeError: 'frozenset' object has no attribute 'add'
+	>>> {11:'mahesh',22:'suresh',11:'rajesh'}
+	{11: 'rajesh', 22: 'suresh'}
+	>>> emps1={11:'mahesh',22:'suresh',11:'rajesh'}
+	>>> type(emps1)
+	<class 'dict'>
+	>>> print(dict)
+	<class 'dict'>
+	>>> print(emps1)
+	{11: 'rajesh', 22: 'suresh'}
+	>>> emps1={"suresh":"hyderabad","naresh":"mumbai","suresh":"delhi"}
+	>>> print(emps1)
+	{'suresh': 'delhi', 'naresh': 'mumbai'}
+	>>> emps1={"suresh":"hyderabad",1111:"mumbai",True:"delhi"}
+	>>> print(emps1)
+	{'suresh': 'hyderabad', 1111: 'mumbai', True: 'delhi'}
+
+
+		welcome.py
+		
+		identation
+		
+		
+		ctrl + `
+		
+		Day-2:
+		======
+		
+		class and object 
+		
+		class Welcome:			__init__    self
+		
+			def m1():
+				...
+				...
+				...
+		
+		
+	create the object 
+				obj=Welcome() #constructor will get called 
+		
+				obj.m1()
+		
+		
+		constructor:
+		=============
+		to instantiation
+		
+		to provide values to the global variables 
+		
+		
+		two constructors in class .......
+		
+		Python-->file handling  CSV
+		
+		
+		
+		
+		Exception Handling:
+		===================
+		mechanisam to convert system defined error messages into user friendly error messages 
+		
+		
+		Problems without exception handling
+		
+		1)system defined error messages 
+		
+		2)abnormal termination
+		
+		
+		Advantages with exception handling
+		
+		1)user friendly error messages 
+		
+		2)normal termination
+		
+		
+			compile time error 
+			
+			runtime error (exception) invalid input
+		
+		
+		OOPS:inheritance-->performance
+		
+		class A:
+		
+		100 functions
+		
+		
+		class B(A):
+		
+		20 functions			code reusability-->
+		
+		
+		
+		user defined exception
+		
+		
+		
+		class WrongCredentials(Exception):
+		
+			__init__
+		
+		
+		
+		Regular Expressions:
+		======================
+		
+		
+		1)compile--->compile  
+		2)finditer
+				start
+				end
+				group
+
+				re
+				
+				ab
+				
+				"abababaabba"
+
+	character classes :
+	==================
+
+	[abc]-->either a or b or c
+
+	[^abc]-->except a and b and c
+
+	[a-z]-->any lowercase alphabet
+	[A-Z]-->anu uppercase alphabet
+
+	[a-zA-Z]
+	[0-9]		\d ,\D
+	[a-zA-Z0-9]  \w,\W
+
+	.
+
+	\s-->space character
+	\S-->any char except space character
+
+
+	Quantifiers:
+	=============
+
+	a->exactly one a
+	a+>at least one a
+	a*-->any number of a's including zero  0-n
+	a?-->atmost one a  0 or 1 
+	a{m,n}
+
+
+
+
+	Database:
+	=========
+	Relational Database :tables--relations  mysql,oracle,db2,postgres....
+	NoSql Database			mongodb
+
+		MYSQL-->oracle corporation
+
+	
+MYSQl:
+
+		tables 
+	
+	employee -->eid ,ename ,esal,address...
+
+Querys:SQL
+
+DDL	:create,alter,drop,truncate,rename
+
+DML :insert,update,delete 
+
+DRL :select
+
+
+database 
+
+create database ericsson_virtual; 
+use ericsson_virtual;
+create table employees(eid int,ename varchar(15),esal int);
+describe employees;
+alter table employees add column eadd varchar(15);
+alter table employees drop esal;
+alter table employees change eid empno int;
+alter table employees rename to emps;
+drop table emps;#delete entire table
+truncate table employees;#delete only records/rows /data
+
+insert into employees values(123,"mahesh",20000,"hyderabad");
+insert into employees values(124,"naresh",40000,"banglore");
+insert into employees values(125,"rajesh",50000,"hyderabad");
+insert into employees values(126,"somesh",30000,"delhi");
+insert into employees values(127,"suresh",35000,"banglore");
+insert into employees values(128,"hitesh",45000,"delhi");
+update employees set esal=esal+5000 where eadd="banglore";
+update employees set esal=esal+500;
+delete from employees where eid=128;
+select ename,eadd from employees;
+select * from employees;
+select * from employees where eadd="banglore";
+select * from employees where esal<40000;
+
+
+
+
+
+
+
 
 
