@@ -613,6 +613,65 @@ select * from employees where eadd="banglore";
 select * from employees where esal<40000;
 
 
+PDBC:
+======
+		py--->DB
+
+
+		py -m pip install  mysql-connector-python
+
+
+Day-5:
+======
+
+Webservices:
+============
+
+SOAP    REST
+
+
+
+				PYTHON/JAVA/ANGULAR/REACT<----->	PYTHON-->URLLIB3
+
+REST:
+======
+py -m pip install urllib3
+
+	response = http.request("POST", "http://jsonplaceholder.typicode.com/posts", fields={"title": "Created Post", "body": "kpmg india", "userId": 789})
+
+
+logger 
+======
+
+
+import logging
+
+	critical,error,warning,debug,info...
+
+	logging.basicConfig(file='mylogs.txt', level=logging.WARNING)
+	
+	
+	
+	
+Case Study:
+===========
+
+Product Management Application(MYSQl):
+===============================				products
+
+1)Add Product			productId,productName,productPrice,productCategory,...
+2)Update Product
+3)Delete Product
+4)Get Product By Id
+5)Get All Products
+
+6)Get All Products By Category
+7)Get All Products By ProductName
+
+
+
+
+
 
 
 
